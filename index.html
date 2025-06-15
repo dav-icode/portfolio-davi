@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi - Full Stack Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="frontend/style.css">
+</head>
+
+<body>
+    <!-- Fundo animado -->
+    <div class="animated-bg" id="animatedBg"></div>
+
+    <!-- Header com navegação -->
+    <header id="header">
+        <nav>
+            <div class="logo">davi.dev</div>
+            <ul class="nav-links">
+                <li><a href="#sobre" onclick="showSection('sobre')">Início</a></li>
+                <li><a href="#formacao" onclick="showSection('formacao')">Formação</a></li>
+                <li><a href="#portfolio" onclick="showSection('portfolio')">Portfólio</a></li>
+                <li><a href="#contato" onclick="showSection('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="active">
+            <div class="home-content">
+                <div class="intro">
+                    <h1>Olá, sou Davi</h1>
+                    <h2>{ Full Stack Developer }</h2>
+                    <p>Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras. Especializado em
+                        desenvolvimento web moderno, com foco em experiências de usuário excepcionais e arquiteturas
+                        escaláveis.</p>
+                    <p>Trabalho com tecnologias de ponta tanto no front-end quanto no back-end, sempre em busca de
+                        entregar código limpo, eficiente e de alta qualidade.</p>
+                    <p><strong>Paixões:</strong> Desenvolvimento Full Stack, APIs RESTful, Cloud Computing, UI/UX Design
+                        e Tecnologias Emergentes.</p>
+
+                    <div class="cta-buttons">
+                        <a href="#portfolio" class="btn-primary" onclick="showSection('portfolio')">
+                            Ver Projetos →
+                        </a>
+                        <a href="#contato" class="btn-secondary" onclick="showSection('contato')">
+                            Fale Comigo
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <div class="profile-container">
+                        <div class="profile-glow"></div>
+                        <img src="frontend/img/davi.jpg" alt="Davi - Full Stack Developer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao">
+            <div class="formacao-content">
+                <h2>Formação & Experiência</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Desenvolvimento de APIs & Microserviços</h3>
+                        <div class="year">2024 - Atual</div>
+                        <p>Especialização em desenvolvimento de APIs RESTful robustas usando Node.js, Express e MongoDB.
+                            Experiência com arquiteturas de microserviços, autenticação JWT e integração com serviços
+                            SaaS.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Integrações SaaS & Cloud Computing</h3>
+                        <div class="year">2024 - Atual</div>
+                        <p>Implementação de integrações complexas com plataformas SaaS, serviços de pagamento, CRMs e
+                            ERPs. Experiência com AWS, Docker e deploy automatizado.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Fundamentos da Programação Web</h3>
+                        <div class="year">2024 - Cursando</div>
+                        <p>Disciplina avançada focada em HTML5, CSS3, JavaScript ES6+, frameworks modernos e
+                            desenvolvimento web responsivo. Aprofundamento em performance e acessibilidade.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Desenvolvimento Full Stack</h3>
+                        <div class="year">2023 - 2024</div>
+                        <p>Projetos práticos com React, Node.js, MongoDB e PostgreSQL. Desenvolvimento de aplicações
+                            completas desde o design até o deploy em produção.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Curso Técnico em Informática</h3>
+                        <div class="year">2023 - 2024</div>
+                        <p>Formação técnica abrangente em desenvolvimento de sistemas, banco de dados, lógica de
+                            programação e metodologias ágeis.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Ensino Médio Completo</h3>
+                        <div class="year">2020 - 2022</div>
+                        <p>Formação com ênfase em ciências exatas e lógica matemática, construindo uma base sólida para
+                            a área de tecnologia.</p>
+                    </div>
+                </div>
+
+                <div class="languages-section">
+                    <h3 style="color: var(--accent-purple); margin-bottom: 2rem; font-size: 1.8rem;">Idiomas</h3>
+                    <div class="languages-grid">
+                        <div class="language-card">
+                            <h4>🇧🇷 Português</h4>
+                            <p><strong>Nativo</strong></p>
+                            <p>Comunicação fluente e escrita técnica</p>
+                        </div>
+                        <div class="language-card">
+                            <h4>🇺🇸 Inglês</h4>
+                            <p><strong>Intermediário</strong></p>
+                            <p>Leitura técnica, documentação e comunicação</p>
+                        </div>
+                        <div class="language-card">
+                            <h4>🇪🇸 Espanhol</h4>
+                            <p><strong>Avançado</strong></p>
+                            <p>Conversação fluente e compreensão completa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio">
+            <div class="portfolio-content">
+                <h2>Portfólio & Tecnologias</h2>
+
+                <div class="tech-stack">
+                    <h3>Stack Tecnológico</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #3776ab;"><img src="frontend/img/py.webp" alt="Python"></div>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #61dafb;"><img src="frontend/img/react.png" alt="React"></div>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #339933;"><img src="frontend/img/node.png" alt=""></div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #47a248;"><img src="frontend/img/mongodb.png" alt="mongodb">
+                            </div>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #e34f26;"><img src="frontend/img/html-5.png" alt="html"></div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #1572b6;"><img src="frontend/img/css3.png" alt="css"></div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #f7df1e;"><img src="frontend/img/javascript.png" alt="js"></div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #ff9900;"><img src="frontend/img/amazon-web-services.png"
+                                    alt="aws"></div>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #dd0031;"><img src="frontend/img/angular.jpeg" alt="Angular">
+                            </div>
+                            <span>Angular</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon" style="color: #3178c6;"><img src="frontend/img/typescript.png"
+                                    alt="TypeScript"></div>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="color: var(--accent-orange); margin-bottom: 2rem; text-align: center; font-size: 2rem;">
+                    Projetos Desenvolvidos</h3>
+                <div class="projects">
+                    <div class="project-card">
+                        <h4>☕ Coffee Shop - E-commerce</h4>
+                        <p>Plataforma completa de e-commerce para cafeteria com sistema de pedidos, pagamento integrado
+                            e painel administrativo. Interface moderna e responsiva com experiência de usuário
+                            excepcional.</p>
+                        <p><strong>Tecnologias:</strong> React, Node.js, MongoDB, Stripe API, JWT</p>
+                        <div class="project-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Full Stack</span>
+                            <span class="tag">API Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>🚗 AutoDealer - Plataforma Automotiva</h4>
+                        <p>Sistema completo para concessionária com catálogo de veículos, sistema de busca avançada,
+                            comparador de carros e formulário de contato integrado. Design premium e performance
+                            otimizada.</p>
+                        <p><strong>Tecnologias:</strong> React, CSS3, JavaScript ES6+, API REST</p>
+                        <div class="project-tags">
+                            <span class="tag">Frontend</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>🔗 API Gateway & Microserviços</h4>
+                        <p>Arquitetura de microserviços com API Gateway para gerenciamento de múltiplos serviços.
+                            Implementação de autenticação, rate limiting, logging e monitoramento em tempo real.</p>
+                        <p><strong>Tecnologias:</strong> Node.js, Express, MongoDB, Redis, Docker</p>
+                        <div class="project-tags">
+                            <span class="tag">Backend</span>
+                            <span class="tag">Microservices</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>🔧 Sistema de Gestão Web</h4>
+                        <p>Aplicação web robusta para gerenciamento empresarial com dashboard analytics, CRUD completo,
+                            relatórios em PDF e sistema de permissões de usuário.</p>
+                        <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, Chart.js</p>
+                        <div class="project-tags">
+                            <span class="tag">Dashboard</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">CRUD</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>🤖 Automação Python</h4>
+                        <p>Suite de ferramentas Python para automação de processos empresariais, web scraping,
+                            processamento de dados e geração de relatórios automatizados.</p>
+                        <p><strong>Tecnologias:</strong> Python, Pandas, Selenium, Beautiful Soup</p>
+                        <div class="project-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">Data Processing</span>
+                            <span class="tag">Web Scraping</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h4>🌐 SaaS Integration Platform</h4>
+                        <p>Plataforma de integração com múltiplos serviços SaaS incluindo CRMs, ERPs, sistemas de
+                            pagamento e ferramentas de marketing. APIs RESTful e webhooks.</p>
+                        <p><strong>Tecnologias:</strong> Node.js, MongoDB, AWS Lambda, Stripe, Mailchimp</p>
+                        <div class="project-tags">
+                            <span class="tag">SaaS</span>
+                            <span class="tag">Integrations</span>
+                            <span class="tag">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato">
+            <div class="contato-content">
+                <h2>Vamos Conversar?</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Profissional:</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa/Projeto:</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa ou projeto">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" required
+                                placeholder="Conte-me sobre seu projeto, ideia ou como posso ajudar..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <span class="contact-icon"><a href="#"><img src="frontend/img/email.webp" alt=""></a></span>
+                        <h4>Email</h4>
+                        <p>davi.fcosinha@gmail.com</p>
+                        <small>Resposta em até 24h</small>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon"><a href="#"><img src="frontend/img/WhatsApp.svg.webp" alt="wtts"></a></span>
+                        <h4>WhatsApp</h4>
+                        <p>(11) 99793-8739</p>
+                        <small>Seg-Sex: 9h às 18h</small>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon"><a href="#"><img src="frontend/img/linkedin.webp" alt="linkedin"></a></span>
+                        <h4>LinkedIn</h4>
+                        <p>Connect comigo</p>
+                        <small>Networking profissional</small>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon"><a href="#"><img src="frontend/img/loc.webp" alt="Localização"></a></span>
+                        <h4>Localização</h4>
+                        <p>São Paulo, Brasil</p>
+                        <small>Trabalho remoto</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="frontend/app.js"></script>
+</body>
+
+</html>
